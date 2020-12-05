@@ -11,8 +11,12 @@ class Database {
 	private $pass = 'root';
 	private $db = 'students';
 
-	// Connect to DB with PDO.
-	public function connect()
+	/**
+	 * This method returns object of PDO class for connectio to database.
+	 *
+	 * @return PDO
+	 */
+	public function connect():PDO
 	{
 		$pdo = new PDO("mysql:host=$this->host;dbname=$this->db",$this->user,$this->pass);
 

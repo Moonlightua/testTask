@@ -13,7 +13,7 @@ class getStudentsList extends Database implements getStudentsListInterface {
 	/**
 	 * {@inheritdoc}
 	 */
-	public function connect() {
+	public function connect():PDO {
 		return parent::connect();
 	}
 

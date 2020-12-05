@@ -3,6 +3,7 @@
 namespace Test;
 
 use Exception;
+use PDO;
 
 require_once "Database.php";
 require_once "editStudentInterface.php";
@@ -12,7 +13,7 @@ class editStudent extends Database implements editStudentInterface {
 	/**
 	 * {@inheritdoc}
 	 */
-	public function connect() {
+	public function connect():PDO {
 		return parent::connect();
 	}
 
