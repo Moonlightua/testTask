@@ -2,7 +2,7 @@
 
 namespace Test;
 
-require_once "deleteStudent.php";
+require_once "./application/module/deleteStudent.php";
 
 
 	// Check if exist ID of student and this ID is number execute deleting student.
@@ -12,7 +12,7 @@ if(isset($_GET['del']) && is_numeric($_GET['del'])){
 	if(!$delete){
 		return false;
 	}else{
-		header('Location: /');
+		header('Location: /index.php?module=controllers&page=getStudentList');
 		exit;
 	}
 }

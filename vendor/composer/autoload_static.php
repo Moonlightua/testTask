@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitbb4037832c52c70e9166ec09bb479e42
 {
+    public static $files = array (
+        'e46be31de09a8f4b6e6994a5d54c7a2f' => __DIR__ . '/../..' . '/application/router.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
@@ -16,8 +20,12 @@ class ComposerStaticInitbb4037832c52c70e9166ec09bb479e42
     public static $prefixDirsPsr4 = array (
         'Test\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/module',
+            0 => __DIR__ . '/../..' . '/application/module',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/application/controllers',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -25,6 +33,7 @@ class ComposerStaticInitbb4037832c52c70e9166ec09bb479e42
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitbb4037832c52c70e9166ec09bb479e42::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitbb4037832c52c70e9166ec09bb479e42::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitbb4037832c52c70e9166ec09bb479e42::$fallbackDirsPsr4;
 
         }, null, ClassLoader::class);
     }

@@ -1,7 +1,11 @@
 {
   "autoload": {
+    "files": [
+      "application/router.php"
+    ],
     "psr-4": {
-      "Test\\": "module"
+      "Test\\": "application/module/",
+      "": "application/controllers/"
     }
   },
   "require": {
