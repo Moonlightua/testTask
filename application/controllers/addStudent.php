@@ -1,9 +1,6 @@
 <?php
 
-namespace Test;
-
-use Exception;
-
+use App\application\module\addStudents;
 
 include "../module/addStudents.php";
 

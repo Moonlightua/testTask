@@ -1,6 +1,6 @@
 <?php
 
-namespace Test;
+use App\application\module\deleteStudent;
 
 require_once "./application/module/deleteStudent.php";
 

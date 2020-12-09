@@ -1,8 +1,6 @@
 <?php
 
-namespace Test;
-
-use Exception;
+use App\application\module\editStudent;
 
 include "../module/editStudent.php";
 

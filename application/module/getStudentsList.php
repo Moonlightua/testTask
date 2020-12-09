@@ -1,12 +1,10 @@
 <?php
 
-namespace Test;
+namespace App\application\module;
 
 use Exception;
 use PDO;
 
-require_once "Database.php";
-require_once "getStudentsListInterface.php";
 
 class getStudentsList extends Database implements getStudentsListInterface {
 

@@ -3,8 +3,8 @@
 	<ul>
 		<li><a href="/">Main</a></li>
 		<li><a href="/index.php?page=addStudent">Add Student</a></li>
-		<li><a href="/index.php?module=controllers&page=updateStudent">Update Student</a></li>
-		<li><a href="/index.php?module=controllers&page=getStudentList">Students List</a></li>
+		<li><a href="/index.php?page=updateStudent">Update Student</a></li>
+		<li><a href="/index.php?page=getStudentList">Students List</a></li>
 	</ul>
 </h2>
 <hr>

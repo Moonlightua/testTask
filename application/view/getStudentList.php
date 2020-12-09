@@ -12,7 +12,7 @@ foreach($result as $items) {
 	<p>
 		$id.) <b>$name</b> [Age: $age | $gender] <br> Group:$group <br>Added: $date
 		<p align="right">
-		<a href="/index.php?module=controllers&page=deleteStud&del=$id">Delete</a>
+		<a href="/index.php?page=deleteStud&del=$id">Delete</a>
 	</p>
 	<hr>
 	</p>

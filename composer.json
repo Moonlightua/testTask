@@ -1,12 +1,11 @@
 {
   "autoload": {
+    "psr-4": {
+      "App\\application\\module\\": "application/module"
+    },
     "files": [
       "application/router.php"
-    ],
-    "psr-4": {
-      "Test\\": "application/module/",
-      "": "application/controllers/"
-    }
+    ]
   },
   "require": {
     "ext-pdo": "*"
